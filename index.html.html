@@ -172,7 +172,9 @@
     .footer-socials { display:flex; }
   }
 
+  .hero-scenarios { display:grid; }
   @media (max-width:900px) {
+    .hero-scenarios { grid-template-columns:1fr !important; }
     #problem .services-grid, #about > div { grid-template-columns:1fr !important; gap:32px !important; }
     #problem [style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
     #about [style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
@@ -205,12 +207,13 @@
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-tagline"><span>Your business, always on the line.</span></div>
-  <div class="hero-eyebrow">The Voice of Your Business. Automated.</div>
-  <h1 class="hero-headline">Your leads called.<br><em>Nobody answered.</em><br>That ends now.</h1>
-  <p class="hero-sub">Voxlane builds AI voice agents that respond to every missed call, after-hours enquiry, and inbound message within 60 seconds. They qualify, engage, and book viewings into your calendar. Day or night.</p>
+  <div class="hero-eyebrow">AI Voice Agents for Real Estate</div>
+  <h1 class="hero-headline">Your phone<br><em>never goes</em><br>to voicemail.</h1>
+  <p class="hero-sub">Your AI answers every call live. No voicemail. No missed opportunity. When a lead fills a form, they get a call back within 60 seconds. Viewings booked straight into your calendar. Day or night.</p>
   <div class="hero-actions">
     <a href="https://calendly.com/marrium7236/voxlane-demo-call" target="_blank" class="btn-primary">Book a free demo</a>
   </div>
+
   <div class="hero-stats">
     <div><div class="stat-number">60<span>s</span></div><div class="stat-label">Average response time</div></div>
     <div><div class="stat-number">9<span>x</span></div><div class="stat-label">Higher lead conversion</div></div>
@@ -250,25 +253,25 @@
       <div class="section-label reveal">What we build</div>
       <h2 class="section-title reveal d1">Five ways we<br><em>work for you.</em></h2>
     </div>
-    <p class="section-desc reveal d2">Every Voxlane agent is built custom for your business, your voice, and your workflow. We do not sell software. We build systems that run themselves.</p>
+    <p class="section-desc reveal d2">Every Voxlane agent is built custom for your business, your voice, and your market. We do not sell software. We build systems that handle the work and run themselves.</p>
   </div>
   <div class="services-grid">
     <div class="service-card reveal">
       <div class="service-icon">&#128222;</div>
       <div class="service-name">Outbound Lead Follow-Up</div>
-      <div class="service-desc">The moment a lead comes in from any source, your AI agent calls them. Qualifies, answers questions, books the viewing. Your pipeline never goes cold again.</div>
+      <div class="service-desc">The moment a lead submits a form from your website, Facebook ad, Zillow, or any source, your AI calls them back within 60 seconds. Qualifies, answers questions, books the viewing. Your pipeline never goes cold again.</div>
       <span class="service-tag">Most requested</span>
     </div>
     <div class="service-card reveal d1">
       <div class="service-icon">&#128314;</div>
       <div class="service-name">Inbound Call Handling</div>
-      <div class="service-desc">When someone calls your number, your AI answers immediately. 24 hours a day. No more missed calls going to voicemail. No more leads calling your competitor instead.</div>
+      <div class="service-desc">When someone calls your number, your AI answers immediately. Live. 24 hours a day. No voicemail. No missed call. No lead lost to a competitor who picked up first.</div>
       <span class="service-tag">Always on</span>
     </div>
     <div class="service-card reveal d2">
       <div class="service-icon">&#127760;</div>
       <div class="service-name">After Hours Coverage</div>
-      <div class="service-desc">Leads do not wait until morning. Your AI works evenings, weekends, and holidays. Every enquiry that comes in at 11pm gets a response within 60 seconds. You wake up to booked viewings.</div>
+      <div class="service-desc">Leads do not wait until morning. Your AI works evenings, weekends, and holidays. A form submitted at 11pm gets a call back within 60 seconds. A call that comes in at midnight gets answered live. You wake up to booked viewings.</div>
       <span class="service-tag">24/7 active</span>
     </div>
     <div class="service-card reveal d1">
@@ -293,7 +296,7 @@
       <div class="section-label reveal">The reality of lead follow-up</div>
       <h2 class="section-title reveal d1">Numbers that<br><em>make it obvious.</em></h2>
     </div>
-    <p class="section-desc reveal d2">These are not our numbers. These are industry-wide statistics. The gap between slow follow-up and fast follow-up is not small. It is the difference between a viewing and a dead lead.</p>
+    <p class="section-desc reveal d2">These are industry-wide statistics. The numbers do not care whether you are busy, sleeping, or on another call. The window closes regardless.</p>
   </div>
   <div class="numbers-grid">
     <div class="number-card reveal">
@@ -321,7 +324,7 @@
       <div class="section-label reveal">Why it works</div>
       <h2 class="section-title reveal d1">The first 60 seconds<br><em>decide everything.</em></h2>
     </div>
-    <p class="section-desc reveal d2">Speed is not a feature. It is the entire game. The agent that calls first books the viewing. Voxlane makes sure that agent is always you.</p>
+    <p class="section-desc reveal d2">Speed is not a feature. It is the entire game. The business that answers the call and follows up the fastest wins the viewing. Voxlane makes sure that business is always you.</p>
   </div>
   <div class="proof-grid">
     <div class="proof-card reveal">
@@ -379,13 +382,13 @@
     <div class="section-label" style="margin-bottom:16px;">How Voxlane solves it</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
       <div>
-        <h3 style="font-family:'Instrument Serif',serif;font-size:clamp(28px,3vw,40px);color:var(--white);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px;">Your business responds<br><em style="color:var(--accent);">before you even know</em><br>someone called.</h3>
-        <p style="font-size:14px;color:var(--mid);line-height:1.8;font-weight:300;">We build an AI voice agent that answers every missed call, responds to every after-hours enquiry, and handles every inbound message within 60 seconds. It qualifies the prospect, understands their situation, and books a viewing into your calendar. You just show up.</p>
+        <h3 style="font-family:'Instrument Serif',serif;font-size:clamp(28px,3vw,40px);color:var(--white);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px;">Your business<br><em style="color:var(--accent);">responds before</em><br>you even know.</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.8;font-weight:300;">Voxlane builds AI voice agents that handle every conversation your business would otherwise miss. Calls answered live. Enquiries followed up. Viewings booked. All without you lifting a finger.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:16px;">
         <div style="display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;">
           <span style="color:var(--accent);font-size:18px;margin-top:2px;">&#10003;</span>
-          <div><div style="font-size:14px;color:var(--white);font-weight:400;margin-bottom:4px;">Responds within 60 seconds</div><div style="font-size:12px;color:var(--mid);">Every missed call, every after-hours enquiry, every weekend message</div></div>
+          <div><div style="font-size:14px;color:var(--white);font-weight:400;margin-bottom:4px;">Picks up every call live</div><div style="font-size:12px;color:var(--mid);">Your AI answers the moment the phone rings. No voicemail. Ever.</div></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;">
           <span style="color:var(--accent);font-size:18px;margin-top:2px;">&#10003;</span>
@@ -421,7 +424,7 @@
     </div>
     <div>
       <p style="font-size:16px;color:var(--white);line-height:1.85;font-weight:300;margin-bottom:24px;">Most real estate agents are excellent at their job. They know properties. They know people. They know how to close.</p>
-      <p style="font-size:16px;color:var(--mid);line-height:1.85;font-weight:300;margin-bottom:24px;">What they cannot do is be in two places at once. A lead calls while the agent is on a showing. By the time they call back the person has already spoken to someone else. The deal is gone before it ever started.</p>
+      <p style="font-size:16px;color:var(--mid);line-height:1.85;font-weight:300;margin-bottom:24px;">What they cannot do is be in two places at once. A lead calls while the agent is on a showing. The call goes unanswered. By the time the agent is free, that person has already spoken to someone else. The deal is gone before it ever started.</p>
       <p style="font-size:16px;color:var(--mid);line-height:1.85;font-weight:300;margin-bottom:40px;">I spent the last year learning everything I could about AI voice technology and workflow automation specifically to solve that one problem. The gap between a lead reaching out and someone actually speaking to them is where real money is won and lost in real estate.</p>
 
       <a href="https://calendly.com/marrium7236/voxlane-demo-call" target="_blank" class="btn-primary">Talk to Marrium directly</a>
@@ -440,7 +443,7 @@
   <div class="faq-list reveal">
     <div class="faq-item">
       <button class="faq-question">What happens to leads that come in after hours?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>Your Voxlane agent never sleeps. Anyone who tries to reach you at 11pm on a Sunday gets a response within 60 seconds, just like someone who calls at 10am on a Monday. By the time you wake up the conversation is handled and a viewing is already in your calendar.</p></div>
+      <div class="faq-answer"><p>Your Voxlane agent never sleeps. A lead that fills a form at 11pm on a Sunday gets called back within 60 seconds, just like one that comes in at 10am on a Monday. And if someone calls your number at any hour, your AI picks up live. By the time you wake up the conversation is handled and a viewing is already in your calendar.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">Does it sound like a robot?<div class="faq-toggle">+</div></button>
