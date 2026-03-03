@@ -171,6 +171,12 @@
     .footer-links { display:none; }
     .footer-socials { display:flex; }
   }
+
+  @media (max-width:900px) {
+    #problem .services-grid, #about > div { grid-template-columns:1fr !important; gap:32px !important; }
+    #problem [style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
+    #about [style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
+  }
 </style>
 </head>
 <body>
@@ -178,9 +184,9 @@
 <nav id="mainNav">
   <a href="#" class="nav-logo">Voxlane<div class="dot"></div></a>
   <ul class="nav-links">
-    <li><a href="#how">How it works</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#problem">The problem</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -201,7 +207,7 @@
   <div class="hero-tagline"><span>Your business, always on the line.</span></div>
   <div class="hero-eyebrow">The Voice of Your Business. Automated.</div>
   <h1 class="hero-headline">Your leads called.<br><em>Nobody answered.</em><br>That ends now.</h1>
-  <p class="hero-sub">Voxlane builds AI voice agents that follow up with every lead within 60 seconds, qualify them automatically, and book viewings into your calendar. Day or night.</p>
+  <p class="hero-sub">Voxlane builds AI voice agents that respond to every missed call, after-hours enquiry, and inbound message within 60 seconds. They qualify, engage, and book viewings into your calendar. Day or night.</p>
   <div class="hero-actions">
     <a href="https://calendly.com/marrium7236/voxlane-demo-call" target="_blank" class="btn-primary">Book a free demo</a>
   </div>
@@ -209,67 +215,34 @@
     <div><div class="stat-number">60<span>s</span></div><div class="stat-label">Average response time</div></div>
     <div><div class="stat-number">9<span>x</span></div><div class="stat-label">Higher lead conversion</div></div>
     <div><div class="stat-number">24<span>/7</span></div><div class="stat-label">Always available</div></div>
-    <div><div class="stat-number">0</div><div class="stat-label">Leads left unfollowed</div></div>
+    <div><div class="stat-number">0</div><div class="stat-label">Calls or enquiries left unanswered</div></div>
   </div>
 </section>
 
 <div class="marquee-strip">
   <div class="marquee-track">
-    <span class="marquee-item">Instant lead follow-up</span>
-    <span class="marquee-item">24/7 availability</span>
+    <span class="marquee-item">AI voice agents</span>
+    <span class="marquee-item">Zero missed calls</span>
     <span class="marquee-item">Real estate agencies</span>
-    <span class="marquee-item">Viewing bookings automated</span>
     <span class="marquee-item">Inbound call handling</span>
     <span class="marquee-item">Lead qualification</span>
-    <span class="marquee-item">Zero missed calls</span>
-    <span class="marquee-item">US and UK markets</span>
     <span class="marquee-item">After hours coverage</span>
-    <span class="marquee-item">Instant lead follow-up</span>
-    <span class="marquee-item">24/7 availability</span>
+    <span class="marquee-item">Cold lead outreach</span>
+    <span class="marquee-item">US and UK markets</span>
+    <span class="marquee-item">Viewing bookings</span>
+    <span class="marquee-item">AI voice agents</span>
+    <span class="marquee-item">Zero missed calls</span>
     <span class="marquee-item">Real estate agencies</span>
-    <span class="marquee-item">Viewing bookings automated</span>
     <span class="marquee-item">Inbound call handling</span>
     <span class="marquee-item">Lead qualification</span>
-    <span class="marquee-item">Zero missed calls</span>
-    <span class="marquee-item">US and UK markets</span>
     <span class="marquee-item">After hours coverage</span>
+    <span class="marquee-item">Cold lead outreach</span>
+    <span class="marquee-item">US and UK markets</span>
+    <span class="marquee-item">Viewing bookings</span>
   </div>
 </div>
 
-<section class="cs" id="how">
-  <div class="section-intro">
-    <div>
-      <div class="section-label reveal">How it works</div>
-      <h2 class="section-title reveal d1">Simple to start.<br><em>Impossible to ignore.</em></h2>
-    </div>
-    <p class="section-desc reveal d2">Most agents lose leads in the first 5 minutes. Not because they do not care. Because they are with another client. Voxlane closes that gap automatically, from day one.</p>
-  </div>
-  <div class="steps-grid">
-    <div class="step-card reveal">
-      <div class="step-num">01</div>
-      <div class="step-title">Lead submits a form</div>
-      <div class="step-desc">From your website, Facebook ad, Zillow, or any source. The moment it lands, we know.</div>
-      <div class="step-arrow">&#8594;</div>
-    </div>
-    <div class="step-card reveal d1">
-      <div class="step-num">02</div>
-      <div class="step-title">AI calls within 60 seconds</div>
-      <div class="step-desc">Your branded AI agent calls the lead by name before they have even closed their browser tab.</div>
-      <div class="step-arrow">&#8594;</div>
-    </div>
-    <div class="step-card reveal d2">
-      <div class="step-num">03</div>
-      <div class="step-title">Qualifies and books</div>
-      <div class="step-desc">Asks budget, timeline, and area. Qualifies the lead and books a viewing directly into your calendar.</div>
-      <div class="step-arrow">&#8594;</div>
-    </div>
-    <div class="step-card reveal d3">
-      <div class="step-num">04</div>
-      <div class="step-title">You get a summary</div>
-      <div class="step-desc">Full transcript and qualification score sent instantly. You only show up to viewings that are worth your time.</div>
-    </div>
-  </div>
-</section>
+
 
 <section class="cs" id="services">
   <div class="section-intro">
@@ -295,7 +268,7 @@
     <div class="service-card reveal d2">
       <div class="service-icon">&#127760;</div>
       <div class="service-name">After Hours Coverage</div>
-      <div class="service-desc">Leads do not wait until morning. Your AI works evenings, weekends, and holidays. Every enquiry that comes in at 11pm gets called within 60 seconds. You wake up to booked viewings.</div>
+      <div class="service-desc">Leads do not wait until morning. Your AI works evenings, weekends, and holidays. Every enquiry that comes in at 11pm gets a response within 60 seconds. You wake up to booked viewings.</div>
       <span class="service-tag">24/7 active</span>
     </div>
     <div class="service-card reveal d1">
@@ -306,10 +279,11 @@
     </div>
     <div class="service-card reveal d2">
       <div class="service-icon">&#128260;</div>
-      <div class="service-name">Re-engagement Campaigns</div>
-      <div class="service-desc">Have a list of cold leads from the last 6 months? We build an agent that re-engages them systematically. Dead leads become booked viewings.</div>
+      <div class="service-name">Cold Lead Outreach</div>
+      <div class="service-desc">Have a list of people who never converted? Your AI agent works through it systematically. It calls every contact, reopens conversations, and books viewings with prospects who went quiet months ago.</div>
       <span class="service-tag">Revive your pipeline</span>
     </div>
+
   </div>
 </section>
 
@@ -336,7 +310,7 @@
     </div>
     <div class="number-card reveal d3">
       <div class="big-number">60<span>s</span></div>
-      <div class="number-label">Is all it takes. Voxlane agents call every lead within 60 seconds of form submission</div>
+      <div class="number-label">Is all it takes. Voxlane responds to every missed call, enquiry, or message within 60 seconds</div>
     </div>
   </div>
 </section>
@@ -365,8 +339,94 @@
     <div class="proof-card reveal d2">
       <div class="proof-icon">&#127769;</div>
       <div class="proof-stat">47%</div>
-      <div class="proof-point">of inbound leads come in outside of business hours. Without automation, they all go cold.</div>
+      <div class="proof-point">of inbound leads come in outside business hours. Without automation, they all go cold.</div>
       <div class="proof-source">Salesforce Research</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROBLEM SECTION -->
+<section class="cs" id="problem">
+  <div class="section-intro">
+    <div>
+      <div class="section-label reveal">The problem we solve</div>
+      <h2 class="section-title reveal d1">Real estate agents<br><em>lose deals every day.</em></h2>
+    </div>
+    <p class="section-desc reveal d2">Not because they are bad at their job. Because they cannot be in two places at once. Voxlane exists to close that gap.</p>
+  </div>
+  <div class="services-grid" style="margin-top:72px;">
+    <div class="service-card reveal">
+      <div class="service-icon">&#128222;</div>
+      <div class="service-name">Missed calls during showings</div>
+      <div class="service-desc">You are walking a buyer through a property. Three calls come in. By the time you call back two hours later those people have already spoken to another agent. The deal is gone before it ever started.</div>
+      <span class="service-tag">Happens daily</span>
+    </div>
+    <div class="service-card reveal d1">
+      <div class="service-icon">&#127769;</div>
+      <div class="service-name">After-hours enquiries go cold</div>
+      <div class="service-desc">47% of real estate enquiries come in outside business hours. Sunday evenings. Bank holidays. 11pm on a Friday. Every one of those people gets a response from your competitor before you even see the message.</div>
+      <span class="service-tag">47% of all leads</span>
+    </div>
+    <div class="service-card reveal d2">
+      <div class="service-icon">&#9200;</div>
+      <div class="service-name">The 5-minute window closes fast</div>
+      <div class="service-desc">MIT research shows your odds of reaching a lead drop by 10x if you wait just 5 minutes after they reach out. Most agents call back hours later. By then the window is closed and the commission is gone.</div>
+      <span class="service-tag">10x drop in 5 minutes</span>
+    </div>
+  </div>
+  <div style="margin-top:64px;padding:48px;background:rgba(200,241,53,0.04);border:1px solid rgba(200,241,53,0.15);border-radius:12px;" class="reveal">
+    <div class="section-label" style="margin-bottom:16px;">How Voxlane solves it</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+      <div>
+        <h3 style="font-family:'Instrument Serif',serif;font-size:clamp(28px,3vw,40px);color:var(--white);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px;">Your business responds<br><em style="color:var(--accent);">before you even know</em><br>someone called.</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.8;font-weight:300;">We build an AI voice agent that answers every missed call, responds to every after-hours enquiry, and handles every inbound message within 60 seconds. It qualifies the prospect, understands their situation, and books a viewing into your calendar. You just show up.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;">
+          <span style="color:var(--accent);font-size:18px;margin-top:2px;">&#10003;</span>
+          <div><div style="font-size:14px;color:var(--white);font-weight:400;margin-bottom:4px;">Responds within 60 seconds</div><div style="font-size:12px;color:var(--mid);">Every missed call, every after-hours enquiry, every weekend message</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;">
+          <span style="color:var(--accent);font-size:18px;margin-top:2px;">&#10003;</span>
+          <div><div style="font-size:14px;color:var(--white);font-weight:400;margin-bottom:4px;">Qualifies before you get involved</div><div style="font-size:12px;color:var(--mid);">Budget, area, timeline captured in the first conversation</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;">
+          <span style="color:var(--accent);font-size:18px;margin-top:2px;">&#10003;</span>
+          <div><div style="font-size:14px;color:var(--white);font-weight:400;margin-bottom:4px;">Books directly into your calendar</div><div style="font-size:12px;color:var(--mid);">Viewing confirmed. You show up.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="cs" id="about">
+  <div class="section-intro">
+    <div>
+      <div class="section-label reveal">About Voxlane</div>
+      <h2 class="section-title reveal d1">Built by someone who<br><em>studied the problem closely.</em></h2>
+    </div>
+    <p class="section-desc reveal d2">Voxlane is not a software company. It is a build-and-run service for real estate agents who want to stop losing deals to timing.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:72px;" class="reveal">
+    <div>
+      <div style="width:100%;aspect-ratio:4/3;background:rgba(200,241,53,0.04);border:1px solid rgba(200,241,53,0.12);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:32px;overflow:hidden;position:relative;">
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 60% 40%,rgba(200,241,53,0.08),transparent 70%);"></div>
+        <div style="text-align:center;position:relative;z-index:1;">
+          <div style="font-family:'Instrument Serif',serif;font-size:64px;color:var(--accent);line-height:1;">M</div>
+          <div style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.2em;color:var(--mid);text-transform:uppercase;margin-top:8px;">Founder</div>
+        </div>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-size:26px;color:var(--white);letter-spacing:-0.02em;margin-bottom:4px;">Marrium Batool</div>
+      <div style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.15em;color:var(--accent);text-transform:uppercase;">Founder &amp; AI Specialist</div>
+    </div>
+    <div>
+      <p style="font-size:16px;color:var(--white);line-height:1.85;font-weight:300;margin-bottom:24px;">Most real estate agents are excellent at their job. They know properties. They know people. They know how to close.</p>
+      <p style="font-size:16px;color:var(--mid);line-height:1.85;font-weight:300;margin-bottom:24px;">What they cannot do is be in two places at once. A lead calls while the agent is on a showing. By the time they call back the person has already spoken to someone else. The deal is gone before it ever started.</p>
+      <p style="font-size:16px;color:var(--mid);line-height:1.85;font-weight:300;margin-bottom:40px;">I spent the last year learning everything I could about AI voice technology and workflow automation specifically to solve that one problem. The gap between a lead reaching out and someone actually speaking to them is where real money is won and lost in real estate.</p>
+
+      <a href="https://calendly.com/marrium7236/voxlane-demo-call" target="_blank" class="btn-primary">Talk to Marrium directly</a>
     </div>
   </div>
 </section>
@@ -382,23 +442,20 @@
   <div class="faq-list reveal">
     <div class="faq-item">
       <button class="faq-question">What happens to leads that come in after hours?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>Your Voxlane agent never sleeps. A lead that submits a form at 11pm on a Sunday gets called within 60 seconds, just like one that comes in at 10am on a Monday. By the time you wake up, the lead is qualified and a viewing is already in your calendar.</p></div>
+      <div class="faq-answer"><p>Your Voxlane agent never sleeps. Anyone who tries to reach you at 11pm on a Sunday gets a response within 60 seconds, just like someone who calls at 10am on a Monday. By the time you wake up the conversation is handled and a viewing is already in your calendar.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">Does it sound like a robot?<div class="faq-toggle">+</div></button>
       <div class="faq-answer"><p>No. We build a custom voice for your business using professional voice AI technology. It sounds like a real person. Warm, natural, and on-brand. Book a demo and we will walk you through everything before you commit to anything.</p></div>
     </div>
-    <div class="faq-item">
-      <button class="faq-question">What is the return on investment?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>If our AI saves just one mid-sized deal per month, the system has already paid for itself 5x over. Most clients see a positive ROI in the first 14 days. The agent does not take commission, does not call in sick, and does not forget to follow up.</p></div>
-    </div>
+
     <div class="faq-item">
       <button class="faq-question">What if a lead asks something the AI cannot answer?<div class="faq-toggle">+</div></button>
       <div class="faq-answer"><p>The agent handles this gracefully. It says "Let me connect you with someone who can answer that specifically" and either transfers the call live or books a callback. No awkward silences, no wrong answers.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">Do I need to change my current systems?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>No. We integrate with what you already use including your website forms, Facebook Lead Ads, Zillow, your CRM, and your calendar. Nothing changes on your end. We plug in on top of what is already working.</p></div>
+      <div class="faq-answer"><p>No. We integrate with what you already use including your website, Facebook Lead Ads, Zillow, your CRM, and your calendar. Nothing changes on your end. We build on top of what is already working.</p></div>
     </div>
   </div>
 </section>
@@ -449,21 +506,42 @@
 
 <section class="cta-section" id="cta">
   <div class="cta-glow"></div>
-  <div class="cta-eyebrow reveal">Ready when you are</div>
+  <div class="cta-eyebrow reveal">Book your free demo</div>
   <h2 class="cta-headline reveal d1">Your next viewing<br>books <em>itself.</em></h2>
-  <p class="cta-sub reveal d2">Pick a time below. 15 minutes. No pitch decks. No slides. Just a direct conversation.</p>
+  <p class="cta-sub reveal d2">Pick a time below. 15 minutes. No pitch decks. No slides. Just a direct conversation about whether Voxlane is right for your business.</p>
+
+  <!-- What to expect -->
+  <div style="display:flex;justify-content:center;gap:32px;margin-bottom:48px;flex-wrap:wrap;position:relative;z-index:1;" class="reveal d2">
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:100px;padding:10px 20px;">
+      <span style="color:var(--accent);">&#10003;</span>
+      <span style="font-size:13px;color:var(--mid);">15 minutes</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:100px;padding:10px 20px;">
+      <span style="color:var(--accent);">&#10003;</span>
+      <span style="font-size:13px;color:var(--mid);">No commitment required</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:100px;padding:10px 20px;">
+      <span style="color:var(--accent);">&#10003;</span>
+      <span style="font-size:13px;color:var(--mid);">Tailored to your business</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:100px;padding:10px 20px;">
+      <span style="color:var(--accent);">&#10003;</span>
+      <span style="font-size:13px;color:var(--mid);">Free trial available</span>
+    </div>
+  </div>
+
   <div class="calendly-wrap reveal d3">
     <div class="calendly-inline-widget" data-url="https://calendly.com/marrium7236/voxlane-demo-call?hide_gdpr_banner=1&background_color=0a0a0a&text_color=f5f4f0&primary_color=c8f135" style="min-width:320px;height:630px;"></div>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 </section>
 
 <footer>
   <div class="footer-logo">Voxlane<div class="dot"></div></div>
   <ul class="footer-links">
-    <li><a href="#how">How it works</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#problem">The problem</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
   <div class="footer-socials">
