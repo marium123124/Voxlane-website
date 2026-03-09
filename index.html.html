@@ -179,6 +179,37 @@
     #problem [style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
     #about [style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
   }
+
+  /* Mobile improvements */
+  @media (max-width: 600px) {
+    .hero-headline { font-size: clamp(36px, 10vw, 56px) !important; }
+    .hero-sub { font-size: 15px !important; line-height: 1.7 !important; }
+    .hero-stats { grid-template-columns: 1fr 1fr !important; gap: 16px !important; }
+    .stat-number { font-size: 36px !important; }
+    .services-grid { grid-template-columns: 1fr !important; }
+    .numbers-grid { grid-template-columns: 1fr 1fr !important; }
+    .proof-grid { grid-template-columns: 1fr !important; }
+    .section-title { font-size: clamp(28px, 8vw, 40px) !important; }
+    nav { padding: 16px 20px !important; }
+    .nav-links { display: none !important; }
+    .hero-tagline { font-size: 10px !important; }
+    section.cs { padding: 60px 20px !important; }
+    .section-intro { flex-direction: column !important; gap: 16px !important; }
+    .section-desc { font-size: 14px !important; max-width: 100% !important; }
+    .faq-question { font-size: 14px !important; padding: 18px 16px !important; }
+    .faq-answer p { font-size: 13px !important; }
+    .btn-primary { font-size: 13px !important; padding: 14px 24px !important; }
+    .nav-cta { font-size: 11px !important; padding: 8px 14px !important; }
+    footer { padding: 32px 20px !important; }
+    .marquee-strip { display: none !important; }
+    .hero-actions { flex-direction: column !important; align-items: stretch !important; }
+    #problem > div:last-child { padding: 28px 20px !important; }
+    #problem [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; gap: 24px !important; }
+  }
+  @media (max-width: 400px) {
+    .hero-headline { font-size: 32px !important; }
+    .numbers-grid { grid-template-columns: 1fr !important; }
+  }
 </style>
 </head>
 <body>
@@ -199,7 +230,7 @@
     <a href="https://www.instagram.com/voxlane.co/" target="_blank" class="nav-social-link" aria-label="Instagram">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
     </a>
-    <a href="#cta" class="nav-cta">Book a demo</a>
+    <a href="#cta" class="nav-cta">Get a custom AI Audit</a>
   </div>
 </nav>
 
@@ -207,11 +238,11 @@
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-tagline"><span>Your business, always on the line.</span></div>
-  <div class="hero-eyebrow">AI Voice Agents for Real Estate</div>
+  <div class="hero-eyebrow">Voice AI Systems for Real Estate</div>
   <h1 class="hero-headline">Your phone<br><em>never goes</em><br>to voicemail.</h1>
   <p class="hero-sub">Your AI answers every call live. No voicemail. No missed opportunity. When a lead fills a form, they get a call back within 60 seconds. Viewings booked straight into your calendar. Day or night.</p>
   <div class="hero-actions">
-    <a href="https://calendly.com/marrium-voxlane/voxlane-demo-call" target="_blank" class="btn-primary">Book a free demo</a>
+    <a href="https://calendly.com/marrium-voxlane/voxlane-demo-call" target="_blank" class="btn-primary">Get a custom AI Audit</a>
   </div>
 
   <div class="hero-stats">
@@ -224,23 +255,23 @@
 
 <div class="marquee-strip">
   <div class="marquee-track">
-    <span class="marquee-item">AI voice agents</span>
+    <span class="marquee-item">AI system</span>
     <span class="marquee-item">Zero missed calls</span>
     <span class="marquee-item">Real estate agencies</span>
     <span class="marquee-item">Inbound call handling</span>
     <span class="marquee-item">Lead qualification</span>
     <span class="marquee-item">After hours coverage</span>
     <span class="marquee-item">Cold lead outreach</span>
-    <span class="marquee-item">US and UK markets</span>
+    
     <span class="marquee-item">Viewing bookings</span>
-    <span class="marquee-item">AI voice agents</span>
+    <span class="marquee-item">AI system</span>
     <span class="marquee-item">Zero missed calls</span>
     <span class="marquee-item">Real estate agencies</span>
     <span class="marquee-item">Inbound call handling</span>
     <span class="marquee-item">Lead qualification</span>
     <span class="marquee-item">After hours coverage</span>
     <span class="marquee-item">Cold lead outreach</span>
-    <span class="marquee-item">US and UK markets</span>
+    
     <span class="marquee-item">Viewing bookings</span>
   </div>
 </div>
@@ -251,9 +282,9 @@
   <div class="section-intro">
     <div>
       <div class="section-label reveal">What we build</div>
-      <h2 class="section-title reveal d1">Five ways we<br><em>work for you.</em></h2>
+      <h2 class="section-title reveal d1">Five ways we work for you.</h2>
     </div>
-    <p class="section-desc reveal d2">Every Voxlane agent is built custom for your business, your voice, and your market. We do not sell software. We build systems that handle the work and run themselves.</p>
+    <p class="section-desc reveal d2">Every Voxlane system is built custom for your business, your voice, and your market. We do not sell software. We build systems that handle the work and run themselves.</p>
   </div>
   <div class="services-grid">
     <div class="service-card reveal">
@@ -283,7 +314,7 @@
     <div class="service-card reveal d2">
       <div class="service-icon">&#128260;</div>
       <div class="service-name">Cold Lead Outreach</div>
-      <div class="service-desc">Have a list of people who never converted? Your AI agent works through it systematically. It calls every contact, reopens conversations, and books viewings with prospects who went quiet months ago.</div>
+      <div class="service-desc">Have a list of people who never converted? Your AI system works through it systematically. It calls every contact, reopens conversations, and books viewings with prospects who went quiet months ago.</div>
       <span class="service-tag">Revive your pipeline</span>
     </div>
 
@@ -294,7 +325,7 @@
   <div class="section-intro">
     <div>
       <div class="section-label reveal">The reality of lead follow-up</div>
-      <h2 class="section-title reveal d1">Numbers that<br><em>make it obvious.</em></h2>
+      <h2 class="section-title reveal d1">Numbers that make it obvious.</h2>
     </div>
     <p class="section-desc reveal d2">These are industry-wide statistics. The numbers do not care whether you are busy, sleeping, or on another call. The window closes regardless.</p>
   </div>
@@ -322,7 +353,7 @@
   <div class="section-intro">
     <div>
       <div class="section-label reveal">Why it works</div>
-      <h2 class="section-title reveal d1">The first 60 seconds<br><em>decide everything.</em></h2>
+      <h2 class="section-title reveal d1">The first 60 seconds decide everything.</h2>
     </div>
     <p class="section-desc reveal d2">Speed is not a feature. It is the entire game. The business that answers the call and follows up the fastest wins the viewing. Voxlane makes sure that business is always you.</p>
   </div>
@@ -354,7 +385,7 @@
   <div class="section-intro">
     <div>
       <div class="section-label reveal">The problem we solve</div>
-      <h2 class="section-title reveal d1">Real estate agents<br><em>lose deals every day.</em></h2>
+      <h2 class="section-title reveal d1">Real estate agents lose deals every day.</h2>
     </div>
     <p class="section-desc reveal d2">Because they cannot be in two places at once. Voxlane exists to close that gap.</p>
   </div>
@@ -383,7 +414,7 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
       <div>
         <h3 style="font-family:'Instrument Serif',serif;font-size:clamp(28px,3vw,40px);color:var(--white);letter-spacing:-0.03em;line-height:1.1;margin-bottom:16px;">Your business<br><em style="color:var(--accent);">responds before</em><br>you even know.</h3>
-        <p style="font-size:14px;color:var(--mid);line-height:1.8;font-weight:300;">Voxlane builds AI voice agents that handle every conversation your business would otherwise miss. Calls answered live. Enquiries followed up. Viewings booked. All without you lifting a finger.</p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.8;font-weight:300;">Voxlane builds AI system that handle every conversation your business would otherwise miss. Calls answered live. Enquiries followed up. Viewings booked. All without you lifting a finger.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:16px;">
         <div style="display:flex;align-items:flex-start;gap:16px;padding:20px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;">
@@ -408,7 +439,7 @@
   <div class="section-intro">
     <div>
       <div class="section-label reveal">About Voxlane</div>
-      <h2 class="section-title reveal d1">Built by someone who<br><em>studied the problem closely.</em></h2>
+      <h2 class="section-title reveal d1">Built by someone who studied the problem closely.</h2>
     </div>
 
   </div>
@@ -432,23 +463,23 @@
   <div class="section-intro">
     <div>
       <div class="section-label reveal">FAQ</div>
-      <h2 class="section-title reveal d1">Questions we<br><em>hear every time.</em></h2>
+      <h2 class="section-title reveal d1">Questions we hear every time.</h2>
     </div>
     <p class="section-desc reveal d2">Every question answered plainly.</p>
   </div>
   <div class="faq-list reveal">
     <div class="faq-item">
       <button class="faq-question">What happens to leads that come in after hours?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>Your Voxlane agent never sleeps. A lead that fills a form at 11pm on a Sunday gets called back within 60 seconds, just like one that comes in at 10am on a Monday. And if someone calls your number at any hour, your AI picks up live. By the time you wake up the conversation is handled and a viewing is already in your calendar.</p></div>
+      <div class="faq-answer"><p>Your Voxlane system never sleeps. A lead that fills a form at 11pm on a Sunday gets called back within 60 seconds, just like one that comes in at 10am on a Monday. And if someone calls your number at any hour, your AI picks up live. By the time you wake up the conversation is handled and a viewing is already in your calendar.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">Does it sound like a robot?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>No. We build a custom voice for your business using professional voice AI technology. It sounds like a real person. Warm, natural, and on-brand. Book a demo and we will walk you through everything before you commit to anything.</p></div>
+      <div class="faq-answer"><p>No. We build a custom voice for your business using professional voice AI technology. It sounds like a real person. Warm, natural, and on-brand. Get a custom AI Audit and we will walk you through everything before you commit to anything.</p></div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">What if a lead asks something the AI cannot answer?<div class="faq-toggle">+</div></button>
-      <div class="faq-answer"><p>The agent handles this gracefully. It says "Let me connect you with someone who can answer that specifically" and either transfers the call live or books a callback. No awkward silences, no wrong answers.</p></div>
+      <div class="faq-answer"><p>It handles this gracefully. It says "Let me connect you with someone who can answer that specifically" and either transfers the call live or books a callback. No awkward silences, no wrong answers.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">Do I need to change my current systems?<div class="faq-toggle">+</div></button>
@@ -503,7 +534,7 @@
 
 <section class="cta-section" id="cta">
   <div class="cta-glow"></div>
-  <div class="cta-eyebrow reveal">Book your free demo</div>
+  <div class="cta-eyebrow reveal">Get a custom AI Audit</div>
   <h2 class="cta-headline reveal d1">Your next viewing<br>books <em>itself.</em></h2>
   <p class="cta-sub reveal d2">Pick a time below. 15 minutes. No pitch decks. No slides. Just a direct conversation about whether Voxlane is right for your business.</p>
 
